@@ -274,8 +274,11 @@ body {
     padding: 32px;
     display: flex;
     flex-direction:column;
+    justify-content: center;
+    align-items: center;
     margin: 50px auto 50px auto;
 }
+
 /*
 body {
     display: flex;
@@ -299,6 +302,18 @@ body {
 .card__image {
     width: auto;
     height: auto;
+    border: 1px solid rgb(255, 255, 255);
+}
+.card__video {
+  width: auto;
+  height: auto;
+  border: 1px solid rgb(255, 255, 255);
+}
+.card__image--white {
+  width: auto;
+  height: auto;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 /* heading element indside the card block */
@@ -325,7 +340,7 @@ body {
 .button {
     padding: 5px 35px;
     font-size: 20px;
-    border: 3px solid rgb(0, 49, 95);
+    border: 3px solid rgb(95, 0, 79);
     box-shadow: 0 3px 5px 0 rgb(0, 0, 0, 0.5);
 }
 
@@ -345,7 +360,9 @@ body {
 .card__button--secondary {
     background: rgb(0, 49, 95, 50%);
     color: rgb(255, 255, 255);
-    margin-left: 200px;
+    position: relative;
+    left: 200px;
+    /*margin-left: 200px;*/
 }
 
 /*kontakt formular*/
@@ -385,4 +402,15 @@ input[type=submit]:hover {
   background-color: rgb(255, 255, 255);
   padding: 20px;
   margin: 25px 25px 25px;
+}
+
+.sprite {
+  width: 566.93px;
+  height: 566.93px;
+  background: url('animationworkshop.png1') 0 0 no-repeat;
+  animation: play 4s steps(15) infinite;
+}
+@keyframes play {
+  0%{background-position: 0px;}
+  100%{background-position: -8503.95px;}
 }
